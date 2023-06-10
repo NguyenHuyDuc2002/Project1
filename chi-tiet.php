@@ -4,27 +4,6 @@
  <!-- main wrapper start -->
  <main class="body-bg">
 
-<!-- breadcrumb area start -->
-<div class="breadcrumb-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="breadcrumb-wrap">
-                    <nav aria-label="breadcrumb">
-                        <h1>product details</h1>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="shop.html">shop</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">product details</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- breadcrumb area end -->
-
 <!-- page main wrapper start -->
 <div class="shop-main-wrapper pt-50">
     <div class="container">
@@ -120,12 +99,6 @@
                                         <option>Blue</option>
                                         <option>Pink</option>
                                     </select>
-                                </div>
-                                <div class="useful-links mt-28">
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Compare"><i
-                                            class="ion-ios-shuffle"></i>compare</a>
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i
-                                            class="ion-android-favorite-outline"></i>wishlist</a>
                                 </div>
                                 <div class="like-icon mt-20">
                                     <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
@@ -275,159 +248,6 @@
     </div>
 </div>
 <!-- page main wrapper end -->
-
-<!-- most viewed product area start -->
-<section class="related-products-area pt-50 pb-50">
-    <div class="container">
-        <div class="deals-wrapper bg-white">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-header-deals">
-                        <div class="section-title-deals">
-                            <h4>Related Product</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="most-viewed-carousel-2 slick-arrow-style">
-                        <!-- product item start -->
-                        <div class="product-slide-item">
-                            <div class="product-item mb-0">
-                                <div class="product-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/product/product-10.jpg" alt="">
-                                    </a>
-                                    <div class="add-to-links">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="compare.html" data-bs-toggle="tooltip" title="Add to Compare"><i class="ion-stats-bars"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-content p-0">
-                                    <h5 class="product-name pb-0"><a href="product-details.html">joust duffle bag</a></h5>
-                                    <div class="price-box">
-                                        <span class="price-regular">$50.00</span>
-                                        <span class="price-old"><del>$29.99</del></span>
-                                    </div>
-                                    <div class="product-item-action">
-                                        <a class="btn btn-cart" href="cart.html"><i class="ion-bag"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product item start -->
-
-                        <!-- product item start -->
-                        <div class="product-slide-item">
-                            <div class="product-item mb-0">
-                                <div class="product-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/product/product-2.jpg" alt="">
-                                    </a>
-                                    <div class="add-to-links">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="compare.html" data-bs-toggle="tooltip" title="Add to Compare"><i class="ion-stats-bars"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-content p-0">
-                                    <h5 class="product-name pb-0"><a href="product-details.html">joust duffle bag</a></h5>
-                                    <div class="price-box">
-                                        <span class="price-regular">$50.00</span>
-                                        <span class="price-old"><del>$29.99</del></span>
-                                    </div>
-                                    <div class="product-item-action">
-                                        <a class="btn btn-cart" href="cart.html"><i class="ion-bag"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product item start -->
-
-                        <!-- product item start -->
-                        <div class="product-slide-item">
-                            <div class="product-item mb-0">
-                                <div class="product-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/product/product-3.jpg" alt="">
-                                    </a>
-                                    <div class="add-to-links">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="compare.html" data-bs-toggle="tooltip" title="Add to Compare"><i class="ion-stats-bars"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-content p-0">
-                                    <h5 class="product-name pb-0"><a href="product-details.html">joust duffle bag</a></h5>
-                                    <div class="price-box">
-                                        <span class="price-regular">$50.00</span>
-                                        <span class="price-old"><del>$29.99</del></span>
-                                    </div>
-                                    <div class="product-item-action">
-                                        <a class="btn btn-cart" href="cart.html"><i class="ion-bag"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product item start -->
-
-                        <!-- product item start -->
-                        <div class="product-slide-item">
-                            <div class="product-item mb-0">
-                                <div class="product-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/product/product-4.jpg" alt="">
-                                    </a>
-                                    <div class="add-to-links">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="compare.html" data-bs-toggle="tooltip" title="Add to Compare"><i class="ion-stats-bars"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-content p-0">
-                                    <h5 class="product-name pb-0"><a href="product-details.html">joust duffle bag</a></h5>
-                                    <div class="price-box">
-                                        <span class="price-regular">$50.00</span>
-                                        <span class="price-old"><del>$29.99</del></span>
-                                    </div>
-                                    <div class="product-item-action">
-                                        <a class="btn btn-cart" href="cart.html"><i class="ion-bag"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product item start -->
-
-                        <!-- product item start -->
-                        <div class="product-slide-item">
-                            <div class="product-item mb-0">
-                                <div class="product-thumb">
-                                    <a href="product-details.html">
-                                        <img src="assets/img/product/product-9.jpg" alt="">
-                                    </a>
-                                    <div class="add-to-links">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="ion-android-favorite-outline"></i></a>
-                                        <a href="compare.html" data-bs-toggle="tooltip" title="Add to Compare"><i class="ion-stats-bars"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-content p-0">
-                                    <h5 class="product-name pb-0"><a href="product-details.html">joust duffle bag</a></h5>
-                                    <div class="price-box">
-                                        <span class="price-regular">$50.00</span>
-                                        <span class="price-old"><del>$29.99</del></span>
-                                    </div>
-                                    <div class="product-item-action">
-                                        <a class="btn btn-cart" href="cart.html"><i class="ion-bag"></i> Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product item start -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- most viewed product area end -->
 
 </main>
 <!-- main wrapper end -->
