@@ -4268,6 +4268,7 @@ only screen and (max-width: 767.98px) {
     font-size: 16px;
     padding: 0 8px;
     margin-right: 5px;
+    
 }
 
 @media only screen and (max-width: 479.98px) {
@@ -5671,7 +5672,7 @@ only screen and (max-width: 767.98px) {
     font-size: 22px;
     font-weight: 500;
     line-height: 1;
-    padding-bottom: 22px;
+    padding-bottom: 10px;
     text-transform: capitalize;
 }
 
@@ -5684,7 +5685,7 @@ only screen and (max-width: 767.98px) {
 
 .contact-info p {
     color: #555;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -5695,7 +5696,7 @@ only screen and (max-width: 767.98px) {
 
 .contact-info ul li {
     border-bottom: 1px solid #ebebeb;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin-bottom: 15px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5739,6 +5740,37 @@ only screen and (max-width: 767.98px) {
 .contact-info .working-time p span {
     color: #252525;
     padding-right: 10px;
+}
+.contact-info .icon-social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.contact-info .icon-social h3 {
+    margin-right: 10px;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-info .icon-social a {
+    color: #c1c1c8;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 8px;
+    margin-right: 5px;
+    
+}
+.contact-info .icon-social a:hover{
+    color: #4646ed;
 }
 
 /*------ contact info area end -------*/
