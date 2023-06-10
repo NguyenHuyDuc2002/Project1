@@ -30,17 +30,6 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-features-item footer-feature-item">
-                        <div class="features-icon">
-                            <i class="ion-clock"></i>
-                        </div>
-                        <div class="features-content">
-                            <h5>Mon - Fri / 8:00 - 18:00</h5>
-                            <p>Working Days/Hours!</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -57,13 +46,13 @@
                     <div class="footer-widget-item">
                         <div class="footer-widget-logo">
                             <a href="index.html">
-                                <img src="assets/img/logo/logo.png" alt="">
+                                <img src="" alt="">
                             </a>
                         </div>
                         <div class="footer-widget-body">
-                            <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+                            <p>Đây là project của nhóm 4</p>
                             <h6 class="contact-info-title">Contact info:</h6>
-                            <p>169-C, Technohub, Dubai Silicon Oasis.</p>
+                            <p></p>
                             <div class="footer-social-link">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-google-plus"></i></a>
@@ -75,99 +64,11 @@
                     </div>
                 </div>
                 <!-- footer widget item end -->
-
-                <!-- footer widget item start -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-widget-item">
-                        <div class="footer-widget-title">
-                            <h5>information</h5>
-                        </div>
-                        <ul class="footer-widget-body">
-                            <li><a href="#">Specials</a></li>
-                            <li><a href="#">New products</a></li>
-                            <li><a href="#">Top sellers</a></li>
-                            <li><a href="#">Our stores</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- footer widget item end -->
-
-                <!-- footer widget item start -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-widget-item">
-                        <div class="footer-widget-title">
-                            <h5>my account</h5>
-                        </div>
-                        <ul class="footer-widget-body">
-                            <li><a href="my-account.html">my account</a></li>
-                            <li><a href="login-register.html">login/register</a></li>
-                            <li><a href="#">my orders</a></li>
-                            <li><a href="#">my credit slips</a></li>
-                            <li><a href="#">my addresses</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- footer widget item end -->
-
-                <!-- footer widget item start -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-widget-item">
-                        <div class="footer-widget-title">
-                            <h5>customer service</h5>
-                        </div>
-                        <ul class="footer-widget-body">
-                            <li><a href="#">site map</a></li>
-                            <li><a href="#">special</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">Order history</a></li>
-                            <li><a href="#">my account</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- footer widget item end -->
             </div>
         </div>
     </div>
 </div>
 <!-- footer widget area end -->
-
-<!-- newsletter area start -->
-<div class="newsletter-area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-3 col-lg-4 col-md-5">
-                <div class="newsletter-title">
-                    <div class="newsletter-icon">
-                        <i class="ion-ios-email"></i>
-                    </div>
-                    <h3>join Gengar newsletter</h3>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-5 col-md-7">
-                <div class="newsletter-inner">
-                    <form id="mc-form">
-                        <input type="email" class="news-field" id="mc-email" autocomplete="off" placeholder="Enter your email address">
-                        <button class="news-btn" id="mc-submit">Subscribe</button>
-                    </form>
-                    <!-- mailchimp-alerts Start -->
-                    <div class="mailchimp-alerts">
-                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                        <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                        <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                    </div>
-                    <!-- mailchimp-alerts end -->
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-12">
-                <div class="payment-method">
-                    <img src="assets/img/payment.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- newsletter area end -->
 
 <!-- footer bottom area start -->
 <div class="footer-bottom-area">
@@ -175,7 +76,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="copyright-text text-center">
-                    <p>&copy; 2021 <b class="text-white">Genger</b> Made with <i class="ion-heart text-danger"></i> by <a href="https://hasthemes.com/"><b>HasThemes</b></a></p>
+                    <p>&copy; 2023 <b class="text-white">Nhóm 4</b></p>
                 </div>
             </div>
         </div>

@@ -96,7 +96,7 @@
         )
     );
 
-    $schools = getProductListInCategory(1);
+    // $schools = getProductListInCategory(1);
 
     function hienThiSlideSanPham(){
         global $schools;
