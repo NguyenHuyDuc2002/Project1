@@ -64,7 +64,11 @@
                         <div class="col-lg-3">
                             <div class="logo">
                                 <a href="index.html">
+<<<<<<< HEAD
                                     <img src="https://www.pngitem.com/pimgs/m/534-5345666_transparent-background-house-icon-png-png-download-transparent.png" alt="">
+=======
+                                    <img class="custom-logo" src="<?php echo $logo ?>" alt="">
+>>>>>>> dev-code-back-end
                                 </a>
                             </div>
                         </div>
@@ -90,6 +94,21 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-3">
+<<<<<<< HEAD
+=======
+                            <div class="category-toggle-wrap">
+                                <div class="category-toggle">
+                                    <i class="ion-android-menu"></i>
+                                    shop by categories
+                                </div>
+                                <nav class="category-menu category-menu-style_2">
+                                    <ul class="categories-list">
+                                        <?php
+                                            renderCategory();
+                                        ?>
+                                    </ul>
+                                </nav>
+>>>>>>> dev-code-back-end
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -97,12 +116,18 @@
                                 <!-- main menu navbar start -->
                                 <nav class="desktop-menu">
                                     <ul>
+<<<<<<< HEAD
                                         <li class="active"><a href="index.html">Trang chủ <i class="fa fa-angle-down"></i></a>
                                         </li>
                                         <li><a href="#">Danh sách sản phẩm <i class="fa fa-angle-down"></i></a>
                                         </li>
                                         <li><a href="shop.html">Giỏ hàng <i class="fa fa-angle-down"></i></a>
                                         <li><a href="contact-us.html">Liên Hệ</a></li>
+=======
+                                        <?php
+                                            renderMenu();
+                                        ?>
+>>>>>>> dev-code-back-end
                                     </ul>
                                 </nav>
                                 <!-- main menu navbar end -->

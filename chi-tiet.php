@@ -1,9 +1,34 @@
 <?php 
     require_once('layout/header.php');
+    require_once('controller/chi-tietController.php');
 ?>
  <!-- main wrapper start -->
  <main class="body-bg">
 
+<<<<<<< HEAD
+=======
+<!-- breadcrumb area start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-wrap">
+                    <nav aria-label="breadcrumb">
+                        <h1><?php echo ($chiTietSanPham['tenSanPham']) ?></h1>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="shop.html">shop</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><?php echo ($chiTietSanPham['tenSanPham']) ?></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb area end -->
+
+>>>>>>> dev-code-back-end
 <!-- page main wrapper start -->
 <div class="shop-main-wrapper pt-50">
     <div class="container">
@@ -15,64 +40,32 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="product-large-slider mb-20">
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img1.jpg" alt="" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img2.jpg" alt="" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img3.jpg" alt="" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img4.jpg" alt="" />
-                                </div>
-                                <div class="pro-large-img img-zoom">
-                                    <img src="assets/img/product/product-details-img5.jpg" alt="" />
-                                </div>
+                               <?php 
+                                    renderDanhSachAnhSlideTo();
+                               ?>
                             </div>
                             <div class="pro-nav slick-row-10 slick-arrow-style">
-                                <div class="pro-nav-thumb">
-                                    <img src="assets/img/product/product-details-img1.jpg" alt="" />
-                                </div>
-                                <div class="pro-nav-thumb">
-                                    <img src="assets/img/product/product-details-img2.jpg" alt="" />
-                                </div>
-                                <div class="pro-nav-thumb">
-                                    <img src="assets/img/product/product-details-img3.jpg" alt="" />
-                                </div>
-                                <div class="pro-nav-thumb">
-                                    <img src="assets/img/product/product-details-img4.jpg" alt="" />
-                                </div>
-                                <div class="pro-nav-thumb">
-                                    <img src="assets/img/product/product-details-img5.jpg" alt="" />
-                                </div>
+                                <?php 
+                                    renderDanhSachAnhSlideNho();
+                                ?>
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="product-details-des">
-                                <h5 class="product-name">Private Selection Wild Caught Jumbo</h5>
+                                <h5 class="product-name"><?php echo ($chiTietSanPham['tenSanPham']) ?></h5>
                                 <div class="ratings">
-                                    <span><i class="ion-android-star"></i></span>
-                                    <span><i class="ion-android-star"></i></span>
-                                    <span><i class="ion-android-star"></i></span>
-                                    <span><i class="ion-android-star"></i></span>
-                                    <span><i class="ion-android-star"></i></span>
-                                    <div class="pro-review">
-                                        <span>1 review(s)</span>
-                                    </div>
+                                    <?php 
+                                        renderRatingStar();
+                                    ?>
                                 </div>
                                 <div class="price-box">
-                                    <span class="price-regular">$70.00</span>
+                                    <span class="price-regular">$ <?php echo($chiTietSanPham['giaTien']) ?></span>
                                     <span class="price-old"><del></del></span>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                    voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac
-                                    habitasse platea dictumst.</p>
+                                <p><?php echo($chiTietSanPham['moTa']) ?></p>
                                 <div class="availability mt-10 mb-20">
                                     <i class="ion-checkmark-circled"></i>
-                                    <span>200 in stock</span>
+                                    <span><?php echo($chiTietSanPham['soLuong']) ?> in stock</span>
                                 </div>
                                 <div class="quantity-cart-box d-flex align-items-center">
                                     <div class="quantity">
@@ -82,6 +75,7 @@
                                         <a class="btn btn-cart" href="#"><i class="ion-bag"></i>Add to cart</a>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <div class="pro-size mb-26 mt-26">
                                     <h5>size :</h5>
                                     <select class="nice-select">
@@ -99,6 +93,16 @@
                                         <option>Blue</option>
                                         <option>Pink</option>
                                     </select>
+=======
+                                <?php 
+                                    renderLoaiThongSoKyThuat();
+                                ?>
+                                <div class="useful-links mt-28">
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Compare"><i
+                                            class="ion-ios-shuffle"></i>compare</a>
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i
+                                            class="ion-android-favorite-outline"></i>wishlist</a>
+>>>>>>> dev-code-back-end
                                 </div>
                                 <div class="like-icon mt-20">
                                     <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
@@ -138,103 +142,20 @@
                                 <div class="tab-content reviews-tab">
                                     <div class="tab-pane fade show active" id="tab_one">
                                         <div class="tab-one">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                fringilla augue nec est tristique auctor. Ipsum metus feugiat
-                                                sem, quis fermentum turpis eros eget velit. Donec ac tempus
-                                                ante. Fusce ultricies massa massa. Fusce aliquam, purus eget
-                                                sagittis vulputate, sapien libero hendrerit est, sed commodo
-                                                augue nisi non neque.Cras neque metus, consequat et blandit et,
-                                                luctus a nunc. Etiam gravida vehicula tellus, in imperdiet
-                                                ligula euismod eget. Pellentesque habitant morbi tristique
-                                                senectus et netus et malesuada fames ac turpis egestas. Nam
-                                                erat mi, rutrum at sollicitudin rhoncus</p>
+                                            <p><?php echo $chiTietSanPham['thongTinChiTiet'] ?></p>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="tab_two">
                                         <table class="table table-bordered">
                                             <tbody>
-                                                <tr>
-                                                    <td>color</td>
-                                                    <td>black, blue, red</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>size</td>
-                                                    <td>L, M, S</td>
-                                                </tr>
+                                                <?php
+                                                    renderBangThongSoKyThuat();
+                                                ?>
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="tab-pane fade" id="tab_three">
-                                        <form action="#" class="review-form">
-                                            <h5>1 review for <span>Chaz Kangeroo</span></h5>
-                                            <div class="total-reviews">
-                                                <div class="rev-avatar">
-                                                    <img src="assets/img/about/avatar.jpg" alt="">
-                                                </div>
-                                                <div class="review-box">
-                                                    <div class="ratings">
-                                                        <span class="good"><i class="fa fa-star"></i></span>
-                                                        <span class="good"><i class="fa fa-star"></i></span>
-                                                        <span class="good"><i class="fa fa-star"></i></span>
-                                                        <span class="good"><i class="fa fa-star"></i></span>
-                                                        <span><i class="fa fa-star"></i></span>
-                                                    </div>
-                                                    <div class="post-author">
-                                                        <p><span>admin -</span> 30 Mar, 2022</p>
-                                                    </div>
-                                                    <p>Aliquam fringilla euismod risus ac bibendum. Sed sit
-                                                        amet sem varius ante feugiat lacinia. Nunc ipsum nulla,
-                                                        vulputate ut venenatis vitae, malesuada ut mi. Quisque
-                                                        iaculis, dui congue placerat pretium, augue erat
-                                                        accumsan lacus</p>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col">
-                                                    <label class="col-form-label"><span class="text-danger">*</span>
-                                                        Your Name</label>
-                                                    <input type="text" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col">
-                                                    <label class="col-form-label"><span class="text-danger">*</span>
-                                                        Your Email</label>
-                                                    <input type="email" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col">
-                                                    <label class="col-form-label"><span class="text-danger">*</span>
-                                                        Your Review</label>
-                                                    <textarea class="form-control" required></textarea>
-                                                    <div class="help-block pt-10"><span
-                                                            class="text-danger">Note:</span>
-                                                        HTML is not translated!
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col">
-                                                    <label class="col-form-label"><span class="text-danger">*</span>
-                                                        Rating</label>
-                                                    &nbsp;&nbsp;&nbsp; Bad&nbsp;
-                                                    <input type="radio" value="1" name="rating">
-                                                    &nbsp;
-                                                    <input type="radio" value="2" name="rating">
-                                                    &nbsp;
-                                                    <input type="radio" value="3" name="rating">
-                                                    &nbsp;
-                                                    <input type="radio" value="4" name="rating">
-                                                    &nbsp;
-                                                    <input type="radio" value="5" name="rating" checked>
-                                                    &nbsp;Good
-                                                </div>
-                                            </div>
-                                            <div class="buttons">
-                                                <button class="sqr-btn" type="submit">Continue</button>
-                                            </div>
-                                        </form> <!-- end of review-form -->
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -249,6 +170,36 @@
 </div>
 <!-- page main wrapper end -->
 
+<<<<<<< HEAD
+=======
+<!-- most viewed product area start -->
+<section class="related-products-area pt-50 pb-50">
+    <div class="container">
+        <div class="deals-wrapper bg-white">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header-deals">
+                        <div class="section-title-deals">
+                            <h4>Related Product</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="most-viewed-carousel-2 slick-arrow-style">
+                        <?php 
+                            renderRelatedProduct();
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- most viewed product area end -->
+
+>>>>>>> dev-code-back-end
 </main>
 <!-- main wrapper end -->
 
