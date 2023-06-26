@@ -205,8 +205,6 @@
 
 <!-- features categories area end -->
 
-<<<<<<< HEAD
-=======
 <!-- features categories area start -->
 <section class="features-categories-area pt-50">
     <div class="container">
@@ -588,7 +586,6 @@
 ?>
 <!-- most viewed product area end -->
 
->>>>>>> dev-code-back-end
 <!-- brand logo area start -->
 <div class="brand-logo-area bg-white">
     <div class="container">

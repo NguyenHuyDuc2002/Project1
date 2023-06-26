@@ -5,8 +5,6 @@
  <!-- main wrapper start -->
  <main class="body-bg">
 
-<<<<<<< HEAD
-=======
 <!-- breadcrumb area start -->
 <div class="breadcrumb-area">
     <div class="container">
@@ -28,7 +26,6 @@
 </div>
 <!-- breadcrumb area end -->
 
->>>>>>> dev-code-back-end
 <!-- page main wrapper start -->
 <div class="shop-main-wrapper pt-50">
     <div class="container">
@@ -75,25 +72,6 @@
                                         <a class="btn btn-cart" href="#"><i class="ion-bag"></i>Add to cart</a>
                                     </div>
                                 </div>
-<<<<<<< HEAD
-                                <div class="pro-size mb-26 mt-26">
-                                    <h5>size :</h5>
-                                    <select class="nice-select">
-                                        <option>S</option>
-                                        <option>M</option>
-                                        <option>L</option>
-                                        <option>XL</option>
-                                    </select>
-                                </div>
-                                <div class="color-option mb-26">
-                                    <h5>color :</h5>
-                                    <select class="nice-select">
-                                        <option>Golden</option>
-                                        <option>White</option>
-                                        <option>Blue</option>
-                                        <option>Pink</option>
-                                    </select>
-=======
                                 <?php 
                                     renderLoaiThongSoKyThuat();
                                 ?>
@@ -102,7 +80,6 @@
                                             class="ion-ios-shuffle"></i>compare</a>
                                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i
                                             class="ion-android-favorite-outline"></i>wishlist</a>
->>>>>>> dev-code-back-end
                                 </div>
                                 <div class="like-icon mt-20">
                                     <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
@@ -170,8 +147,6 @@
 </div>
 <!-- page main wrapper end -->
 
-<<<<<<< HEAD
-=======
 <!-- most viewed product area start -->
 <section class="related-products-area pt-50 pb-50">
     <div class="container">
@@ -199,7 +174,6 @@
 </section>
 <!-- most viewed product area end -->
 
->>>>>>> dev-code-back-end
 </main>
 <!-- main wrapper end -->
 
