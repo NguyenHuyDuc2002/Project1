@@ -5,30 +5,30 @@
     function getProductInListProduct($listProduct){
         $query = "
             select *
-            from sanpham
-            where id in (".$listProduct.")
-            order by id asc
+            from products
+            where Pro_ID in (".$listProduct.")
+            order by Pro_ID asc
         ";
         $result = executeQuery($query);
         return $result;
     }
 
-    function getAllThongSoKyThuat(){
-        $query = "select DISTINCT t.loaiThongSo from thongsokythuat as t";
+    function getAllSpecification(){
+        $query = "select DISTINCT s.types from specification as s";
         $result = executeQuery($query);
         return $result;
     }
 
-    function getChiTietThongSoByIdSanPhamAndLoaiThongSo($idSanPham, $loaiThongSo){
+    function getDetailSpecificationByProductIdAndType($Pro_ID, $type){
         $query = "
-            select t.tenThongSo
-            from sanpham_thongsokythuat as st
-            join thongsokythuat as t on st.id_thongSo = t.id
-            where st.id_SanPham = ".$idSanPham."
-              and st.id_thongSo in (
-                select thongsokythuat.id
-                from thongsokythuat
-                where loaiThongSo = '".$loaiThongSo."'
+            select s.names
+            from products_specification as ps
+            join specification as s on ps.id_specification = s.id
+            where ps.id_product = ".$Pro_ID."
+              and ps.id_specification in (
+                select s.id
+                from specification
+                where types = '".$type."'
               )
         ";
         

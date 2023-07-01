@@ -15,7 +15,7 @@
                 <section class="slider-area">
                     <div class="hero-slider-active slick-arrow-style slick-dot-style">
                         <?php 
-                            hienThiSlideIndex();
+                            DisplaySlideIndex();
                         ?>
                         <!-- single slider item start -->
                         <div class="hero-slider-item stlder-style_2">
@@ -90,7 +90,7 @@
                         <div class="features-product-carousel slick-arrow-style">
 
                             <?php 
-                                hienThiSlideSanPham();
+                                DisplayProductSlide();
                             ?>
                             <!-- product item start -->
                             <div class="product-slide-item">
@@ -582,7 +582,7 @@
 
 <!-- most viewed product area start -->
 <?php 
-    renderDanhMucSanPham();
+    renderProductCategory();
 ?>
 <!-- most viewed product area end -->
 

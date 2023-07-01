@@ -733,7 +733,7 @@ table tbody {
 }
 
 .theme-color-2 {
-    background-color: #2d70b1;
+    background-color: #ae08fc;
 }
 
 .theme-color-4 {
@@ -1584,7 +1584,7 @@ only screen and (max-width: 767.98px) {
     right: -8px;
     top: 0;
     position: absolute;
-    background-color: #2d70b1;
+    background-color: #7711d7;
 }
 
 .mobile-main-header .mobile-menu-toggler .mobile-menu-btn {
@@ -6242,7 +6242,7 @@ only screen and (max-width: 767.98px) {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 5px 20px;
-    background-color: #2d70b1;
+    background-color: #8011d4;
     width: 60px;
     height: 55px;
 }

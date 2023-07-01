@@ -2,21 +2,21 @@
     require_once('repository/createConnection.php');
     require_once('repository/indexRepository.php');
 
-    function hienThiSlideSanPham(){
+    function DisplayProductSlide(){
        
     }
-    function hienThiSlideIndex(){
-        $slides_array = getSlideByCode("slide_khoi_giua_trang_chu");
+    function DisplaySlideIndex(){
+        $slides_array = getSlideByCode("slide_main");
         foreach($slides_array as $slide){
             echo '
             <!-- single slider item start -->
             <div class="hero-slider-item stlder-style_2">
-                <div class="d-flex align-items-center bg-img h-100" data-bg="'.$slide["image"].'">
+                <div class="d-flex align-items-center bg-img h-100" data-bg="'.$slide["slide_img"].'">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="hero-slider-content hero-slider-content_2">
-                                <h2>'.$slide["title1"].'</h2>
-                                <h1>'.$slide["title2"].'</h1>
+                                <h2>'.$slide["title_1"].'</h2>
+                                <h1>'.$slide["title_2"].'</h1>
                                 <a href="'.$slide["slug"].'" class="btn-hero">shop now</a>
                             </div>
                         </div>
@@ -28,10 +28,10 @@
         }
     }
 
-    function renderDanhMucSanPham(){
-        $danhMuc = getAllDanhMuc();
+    function renderProductCategory(){
+        $category = getAllCategory();
         $html = '';
-        foreach($danhMuc as $d){
+        foreach($category as $c){
             $html = $html . '
             <!-- most viewed product area start -->
             <section class="most-viewed-products pt-46 pb-50">
@@ -42,13 +42,13 @@
                             <div class="col-12">
                                 <div class="section-header-inner_2">
                                     <div class="section-title-deals">
-                                        <h4>'.$d['tenDanhMuc'].'</h4>
+                                        <h4>'.$c['Cate_Name'].'</h4>
                                     </div>
                                     <div class="slick-append slick-append-style_2"></div>
                                 </div>
                                 <div class="product-item-wrapper most-viewed bg-white">
                                     <div class="most-viewed-carousel">
-                                        '.renderSanPhamByDanhMucId($d['id']).'
+                                        '.renderProductByCategoryId($c['Cate_ID']).'
                                     </div>
                                 </div>
                             </div>
@@ -63,18 +63,18 @@
         echo $html;
     }
 
-    function renderSanPhamByDanhMucId($danhMucId){
-        $sanPhams = getSanPhamByDanhMucId($danhMucId);
+    function renderProductByCategoryId($Cate_ID){
+        $product = getProductByCategoryId($Cate_ID);
         $html = '';
-        if(count($sanPhams) > 0){
-            foreach($sanPhams as $s){
+        if(count($product) > 0){
+            foreach($product as $p){
                 $html = $html . '
                 <!-- product item start -->
                 <div class="product-slide-item">
                     <div class="product-item mb-0">
                         <div class="product-thumb">
                             <a href="product-details.html">
-                                <img class="custom-image-product" src="'.$s['avatarSanPham'].'" alt="">
+                                <img class="custom-image-product" src="'.$p['Pro_Avatar'].'" alt="">
                             </a>
                             <div class="add-to-links">
                                 <a href="wishlist.html" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="ion-android-favorite-outline"></i></a>
@@ -82,9 +82,9 @@
                             </div>
                         </div>
                         <div class="product-content p-0">
-                            <h5 class="product-name pb-0"><a href="javascript:void(0)">'.$s['tenSanPham'].'</a></h5>
+                            <h5 class="product-name pb-0"><a href="javascript:void(0)">'.$p['Pro_Name'].'</a></h5>
                             <div class="price-box">
-                                <span class="price-regular">$ '.$s['giaTien'].'</span>
+                                <span class="price-regular">$ '.$p['price'].'</span>
                             </div>
                             <div class="product-item-action">
                                 <a class="btn btn-cart" href="cart.html"><i class="ion-bag"></i> Add To Cart</a>

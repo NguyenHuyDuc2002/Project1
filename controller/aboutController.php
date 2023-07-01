@@ -10,14 +10,14 @@
 
     
     function renderSlideMyTeam(){
-        $slide_my_team = getSlideByCode1("about-page-my-tean");
+        $slide_my_team = getSlideByCode1("slide_about");
         $html = '';
         foreach($slide_my_team as $s){
             $html = $html . '
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-member mb-30">
                     <div class="team-thumb">
-                        <img src="'.$s['anhSlide'].'" alt="">
+                        <img src="'.$s['slide_img'].'" alt="">
                         <div class="team-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -26,8 +26,8 @@
                         </div>
                     </div>
                     <div class="team-content text-center">
-                        <h3>'.$s['tieuDe1'].'</h3>
-                        <h6>'.$s['tieuDe2'].'</h6>
+                        <h3>'.$s['title_1'].'</h3>
+                        <h6>'.$s['title_2'].'</h6>
                         
                     </div>
                 </div>

@@ -11,7 +11,7 @@
             $ChildMenu = getChildMenu($m['id']);
             if(count($ChildMenu) > 0){
                 $html = $html . '
-                <li class=""><a href="javascript:void(0)">'.$m['tenMenu'].' <i class="fa fa-angle-down"></i></a>
+                <li class=""><a href="javascript:void(0)">'.$m['Menu_Name'].' <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown">
                        '.renderChildMenu($m['id']).'
                     </ul>
@@ -19,7 +19,7 @@
             ';
             }
             else{
-                $html = $html . '<li><a href="javascript:void(0)">'.$m['tenMenu'].'</a></li>';
+                $html = $html . '<li><a href="javascript:void(0)">'.$m['Menu_Name'].'</a></li>';
             }
             
         }
@@ -31,7 +31,7 @@
         $html = '';
         foreach($ChildMenu as $m){
             $html = $html . '
-                <li><a href="javascript:void(0)">'.$m['tenMenu'].'</a></li>
+                <li><a href="javascript:void(0)">'.$m['Menu_Name'].'</a></li>
             ';
         }
         return $html;
@@ -41,16 +41,16 @@
         $ParentCategory = getParentCategory();
         $html = '';
         foreach($ParentCategory as $c){
-            $ChildCategory = getChildCategory($c['id']);
+            $ChildCategory = getChildCategory($c['Cate_ID']);
             if(count($ChildCategory) > 0){
                 $html = $html . '
-            <li class="menu-item-has-children"><a href="danh-sach.php?danhMucId='.$c['id'].'">'.$c['tenDanhMuc'].'</a>
+            <li class="menu-item-has-children"><a href="list.php?Cate_ID='.$c['Cate_ID'].'">'.$c['Cate_Name'].'</a>
                 <!-- Mega Category Menu Start -->
                 <ul class="category-mega-menu dropdown">
                     <li class="menu-item-has-children">
-                        <a href="danh-sach.php?danhMucId='.$c['id'].'"></a>
+                        <a href="list.php?Cate_ID='.$c['Cate_ID'].'"></a>
                         <ul class="dropdown">
-                            '.renderChildCategory($c['id']).'
+                            '.renderChildCategory($c['Cate_ID']).'
                         </ul>
                     </li>
                 </ul><!-- Mega Category Menu End -->
@@ -58,7 +58,7 @@
             ';
             }
             else{
-                $html = $html . '<li><a href="danh-sach.php?danhMucId='.$c['id'].'">'.$c['tenDanhMuc'].'</a></li>';
+                $html = $html . '<li><a href="list.php?Cate_ID='.$c['Cate_ID'].'">'.$c['Cate_Name'].'</a></li>';
             }
             
         }
@@ -71,7 +71,7 @@
         $html = '';
         foreach($ChildCategory as $c){
             $html = $html . '
-                <li><a href="danh-sach.php?danhMucId='.$c['id'].'">'.$c['tenDanhMuc'].'</a></li>
+                <li><a href="list.php?Cate_ID='.$c['Cate_ID'].'">'.$c['Cate_Name'].'</a></li>
             ';
         }   
         return $html;

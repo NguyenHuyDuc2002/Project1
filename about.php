@@ -32,15 +32,15 @@
                     <!-- About Text Start -->
                     <div class="col-xl-6 col-lg-6">
                         <div class="about-text-wrap">
-                            <h2><span><?php echo($moTaNho_Khoi1['giaTri']) ?></span><?php echo($moTaLon_Khoi1['giaTri']) ?></h2>
-                            <p><?php echo($noiDung_Khoi1['giaTri']) ?></p>
+                            <h2><span><?php echo($moTaNho_Khoi1['VaL']) ?></span><?php echo($moTaLon_Khoi1['VaL']) ?></h2>
+                            <p><?php echo($noiDung_Khoi1['VaL']) ?></p>
                         </div>
                     </div>
                     <!-- About Text End -->
                     <!-- About Image Start -->
                     <div class="col-xl-5 col-lg-6 ml-auto">
                         <div class="about-image-wrap">
-                            <img src="<?php echo($anh_Khoi1['anhCauHinh']) ?>" alt="About" />
+                            <img src="<?php echo($anh_Khoi1['image_url']) ?>" alt="About" />
                         </div>
                     </div>
                     <!-- About Image End -->

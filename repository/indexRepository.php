@@ -1,23 +1,23 @@
 <?php 
     require_once('createConnection.php');
 
-    function getSlideByCode($slideCode){
-        $query = "select * from slide where code like '".$slideCode."'";
+    function getSlideByCode($code){
+        $query = "select * from slide where code like '".$code."'";
         $result = executeQuery($query);
         return $result;
     }
-    function getAllDanhMuc(){
-        $query = "select * from danhMuc";
+    function getAllCategory(){
+        $query = "select * from categories";
         $result = executeQuery($query);
         return $result;
     }
 
-    function getSanPhamByDanhMucId($danhMucId){
+    function getProductByCategoryId($Cate_ID){
         $query = '
-            select s.*
-            from sanphamtrongdanhmuc as spdm
-            join sanpham as s on spdm.sanPham_id = s.id
-            where spdm.danhMuc_id = '.$danhMucId.'
+            select p.*
+            from categories_products as ctpd
+            join products as p on ctpd.Pro_ID = p.Pro_ID
+            where ctpd.Cate_ID = '.$Cate_ID.'
         ';
         $result = executeQuery($query);
         return $result;

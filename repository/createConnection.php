@@ -1,7 +1,7 @@
 <?php 
     function createConnection(){
         $host = "localhost";
-        $database = "Project_1";
+        $database = "project_1";
         $username = "root";
         $password = "your_password";
 

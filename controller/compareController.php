@@ -9,10 +9,10 @@
         foreach($products as $p){
             $html = $html . '
             <td class="product-image-title">
-                <a href="chi-tiet.php?sanPhamId='.$p['id'].'" class="image">
-                    <img class="img-fluid" src="'.$p['avatarSanPham'].'" alt="Compare Product">
+                <a href="detail.php?Pro_ID='.$p['Pro_ID'].'" class="image">
+                    <img class="img-fluid" src="'.$p['Pro_Avatar'].'" alt="Compare Product">
                 </a>
-                <a href="product-details.html" class="title">'.$p['tenSanPham'].'</a>
+                <a href="product-details.html" class="title">'.$p['Pro_Name'].'</a>
             </td>
             ';
         }
@@ -26,7 +26,7 @@
         foreach($products as $p){
             $html = $html . '
             <td class="pro-desc">
-                <p>'.$p['moTa'].'.</p>
+                <p>'.$p['Descriptions'].'.</p>
             </td>
             
             ';
@@ -40,7 +40,7 @@
         $html = '';
         foreach($products as $p){
             $html = $html . '
-            <td class="pro-price">$ '.$p['giaTien'].'</td>
+            <td class="pro-price">$ '.$p['price'].'</td>
             
             ';
         }
